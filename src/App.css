@@ -1,6 +1,21 @@
 #root {
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
+  font-family: roboto;
+}
+
+body {
+  background-color: rgb(246, 246, 247);
+}
+
+.main-layout {
+  display: grid;
+  grid-template-columns: 300px auto;
+}
+
+.main-content {
+  border: 1px solid gainsboro;
+  border-radius: 5px;
 }
 
 ul li {
@@ -11,4 +26,15 @@ ul li {
 
 ul {
   padding-inline-start: 5px;
+}
+
+@media (max-width: 1250px) {
+  #root {
+    padding: 0.5rem;
+  }
+  .main-layout {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 0;
+  }
 }
