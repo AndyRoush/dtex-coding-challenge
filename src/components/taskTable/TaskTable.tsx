@@ -117,7 +117,7 @@ export default function TaskTable() {
                     <Checkbox />
                     <span>{row.task}</span>
                     <Box sx={{ marginLeft: "auto", marginRight: 1 }}>
-                      <span>R{row.priority}</span>
+                      <span>{row.priority}</span>
                     </Box>
                   </Box>
                 </TableCell>
